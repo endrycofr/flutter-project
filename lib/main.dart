@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutterproject/welcome_screen.dart';
 import 'package:flutterproject/form_screen.dart';
+import 'package:flutterproject/signup_screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -25,7 +27,8 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: FormScreen(),
+      home: WelcomeScreen(),
+
       // const MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }

@@ -1,5 +1,6 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:flutterproject/signup_screen.dart';
 
 class FormScreen extends StatefulWidget {
   @override
@@ -15,10 +16,6 @@ class _FormScreenState extends State<FormScreen> {
   @override
   Widget build(BuildContext) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("Form page"),
-        centerTitle: true,
-      ),
       body: SingleChildScrollView(
         child: Padding(
           padding: EdgeInsets.symmetric(horizontal: 20, vertical: 60),
@@ -104,7 +101,7 @@ class _FormScreenState extends State<FormScreen> {
                     height: 50,
                     width: double.infinity,
                     decoration: BoxDecoration(
-                      color: Colors.indigo[600],
+                      color: Colors.blue[400],
                       borderRadius: BorderRadius.circular(12.0),
                     ),
                     child: Center(
@@ -119,7 +116,7 @@ class _FormScreenState extends State<FormScreen> {
                     ),
                   ),
                 ),
-                SizedBox(height: 20),
+                SizedBox(height: 10),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
@@ -130,13 +127,18 @@ class _FormScreenState extends State<FormScreen> {
                       ),
                     ),
                     TextButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => SignUpScreen(),
+                              ));
+                        },
                         child: Text(
                           "Sign Up",
                           style: TextStyle(
                             fontSize: 17,
                             fontWeight: FontWeight.bold,
-                            decoration: TextDecoration.underline,
                           ),
                         )),
                   ],
