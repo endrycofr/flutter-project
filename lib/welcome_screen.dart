@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutterproject/form_screen.dart';
+import 'package:flutterproject/navbar_roots.dart';
 import 'package:flutterproject/signup_screen.dart';
+
+import 'formlecturer.dart';
 
 class WelcomeScreen extends StatelessWidget {
   @override
@@ -18,9 +21,8 @@ class WelcomeScreen extends StatelessWidget {
               alignment: Alignment.centerRight,
               child: TextButton(
                 onPressed: () {
-                  // Navigator.push(context, MaterialPageRoute(
-                  //   builder:(context) =>
-                  // ));
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => NavBarRoots()));
                 },
                 child: Text(
                   "SKIP",
@@ -49,7 +51,8 @@ class WelcomeScreen extends StatelessWidget {
             ),
             SizedBox(height: 10),
             Text(
-              " Choose Your Lab",
+              " Labs Have Complete Tools",
+              textAlign: TextAlign.center,
               style: TextStyle(
                 color: Colors.black54,
                 fontSize: 17,
@@ -76,7 +79,7 @@ class WelcomeScreen extends StatelessWidget {
                       padding:
                           EdgeInsets.symmetric(vertical: 15, horizontal: 30),
                       child: Text(
-                        "Log In",
+                        "Student",
                         style: TextStyle(
                           color: Colors.white,
                           fontSize: 20,
@@ -94,13 +97,13 @@ class WelcomeScreen extends StatelessWidget {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => SignUpScreen()));
+                              builder: (context) => FormLecturer()));
                     },
                     child: Padding(
                       padding:
                           EdgeInsets.symmetric(vertical: 15, horizontal: 30),
                       child: Text(
-                        "Sign Up",
+                        "Lecturer",
                         style: TextStyle(
                           color: Colors.white,
                           fontSize: 20,

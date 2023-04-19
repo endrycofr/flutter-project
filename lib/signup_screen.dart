@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutterproject/welcome_screen.dart';
 
 import 'form_screen.dart';
 
@@ -19,17 +20,13 @@ class _SignUpScreenState extends State<SignUpScreen> {
         child: SafeArea(
           child: Column(
             children: [
-              SizedBox(height: 30),
+              SizedBox(height: 10),
               Padding(
-                padding: EdgeInsets.all(20),
-                child: Text(
-                  " Sign Up",
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    color: Colors.black,
-                    fontSize: 40,
-                    fontWeight: FontWeight.bold,
-                  ),
+                padding: EdgeInsets.all(5),
+                child: Image.asset(
+                  "images/signup.png",
+                  height: 250,
+                  width: 300,
                 ),
               ),
               SizedBox(height: 10),
@@ -86,7 +83,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                   ),
                 ),
               ),
-              SizedBox(height: 150),
+              SizedBox(height: 20),
               Padding(
                 padding: const EdgeInsets.all(20),
                 child: SizedBox(
@@ -132,7 +129,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                              builder: (context) => FormScreen(),
+                              builder: (context) => WelcomeScreen(),
                             ));
                       },
                       child: Text(

@@ -2,12 +2,12 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutterproject/signup_screen.dart';
 
-class FormScreen extends StatefulWidget {
+class FormLecturer extends StatefulWidget {
   @override
-  State<FormScreen> createState() => _FormScreenState();
+  State<FormLecturer> createState() => _FormlecturerState();
 }
 
-class _FormScreenState extends State<FormScreen> {
+class _FormlecturerState extends State<FormLecturer> {
   final _formfield = GlobalKey<FormState>();
   final emailController = TextEditingController();
   final passController = TextEditingController();
@@ -17,7 +17,7 @@ class _FormScreenState extends State<FormScreen> {
   Widget build(BuildContext) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Student"),
+        title: Text("Lecturer"),
         centerTitle: true,
       ),
       body: SingleChildScrollView(
@@ -30,7 +30,7 @@ class _FormScreenState extends State<FormScreen> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Image.asset(
-                  "images/profile4.png",
+                  "images/profile3.png",
                   height: 200,
                   width: 200,
                 ),

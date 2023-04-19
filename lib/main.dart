@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutterproject/welcome_screen.dart';
 import 'package:flutterproject/form_screen.dart';
 import 'package:flutterproject/signup_screen.dart';
+import 'package:flutterproject/formlecturer.dart';
 
 void main() {
   runApp(MyApp());
