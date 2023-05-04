@@ -48,7 +48,7 @@ class _NavBarRootsState extends State<NavBarRoots> {
             ),
             BottomNavigationBarItem(
               icon: Icon(CupertinoIcons.chat_bubble_text_fill),
-              label: "Massages",
+              label: "Message",
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.calendar_month_outlined),

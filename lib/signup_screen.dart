@@ -20,18 +20,20 @@ class _SignUpScreenState extends State<SignUpScreen> {
         child: SafeArea(
           child: Column(
             children: [
-              SizedBox(height: 10),
+              SizedBox(height: 20),
               Padding(
-                padding: EdgeInsets.all(5),
-                child: Image.asset(
-                  "images/signup.png",
-                  height: 250,
-                  width: 300,
+                padding: EdgeInsets.all(30),
+                child: Text(
+                  "Sign Up",
+                  style: TextStyle(
+                      fontSize: 40,
+                      color: Color.fromARGB(255, 58, 153, 232),
+                      fontWeight: FontWeight.bold),
                 ),
               ),
               SizedBox(height: 10),
               Padding(
-                padding: EdgeInsets.symmetric(vertical: 8, horizontal: 15),
+                padding: EdgeInsets.symmetric(vertical: 10, horizontal: 15),
                 child: TextField(
                   decoration: InputDecoration(
                     labelText: "Full Name",
@@ -41,7 +43,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                 ),
               ),
               Padding(
-                padding: EdgeInsets.symmetric(vertical: 8, horizontal: 15),
+                padding: EdgeInsets.symmetric(vertical: 10, horizontal: 15),
                 child: TextField(
                   decoration: InputDecoration(
                     labelText: "Email",
@@ -51,7 +53,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                 ),
               ),
               Padding(
-                padding: EdgeInsets.symmetric(vertical: 8, horizontal: 15),
+                padding: EdgeInsets.symmetric(vertical: 10, horizontal: 15),
                 child: TextField(
                   decoration: InputDecoration(
                     labelText: "Phone Number",
@@ -61,7 +63,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                 ),
               ),
               Padding(
-                padding: EdgeInsets.symmetric(vertical: 8, horizontal: 15),
+                padding: EdgeInsets.symmetric(vertical: 10, horizontal: 15),
                 child: TextField(
                   obscureText: passToggle ? true : false,
                   decoration: InputDecoration(
@@ -85,7 +87,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
               ),
               SizedBox(height: 20),
               Padding(
-                padding: const EdgeInsets.all(20),
+                padding: const EdgeInsets.all(30),
                 child: SizedBox(
                   width: double.infinity,
                   child: Material(
@@ -100,7 +102,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                       },
                       child: Padding(
                         padding:
-                            EdgeInsets.symmetric(vertical: 15, horizontal: 40),
+                            EdgeInsets.symmetric(vertical: 15, horizontal: 30),
                         child: Text(
                           " Create Acount",
                           textAlign: TextAlign.center,

@@ -73,7 +73,7 @@ class WelcomeScreen extends StatelessWidget {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => FormScreen()));
+                              builder: (context) => FormLecturer()));
                     },
                     child: Padding(
                       padding:
