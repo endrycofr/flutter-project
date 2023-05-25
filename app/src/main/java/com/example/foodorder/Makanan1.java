@@ -16,6 +16,7 @@ public class Makanan1 extends AppCompatActivity {
     private ImageButton nextButton, addButton, minButton;
     private TextView jumlahPesanan;
     private int counter = 0;
+    private int beli;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,7 +44,17 @@ public class Makanan1 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 counter--;
-                jumlahPesanan.setText(String.valueOf(counter));
+
+                if (counter >= 0) {
+                    // Bilangan tidak negatif
+                    counter= beli;
+                } else if (counter < 0 ){
+                    // Bilangan negatif
+                   beli=0;
+                    counter= beli;
+                }
+
+                jumlahPesanan.setText(String.valueOf(beli));
             }
         }) ;
     }
