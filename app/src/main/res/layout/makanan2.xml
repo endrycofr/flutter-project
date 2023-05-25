@@ -44,6 +44,7 @@
                 <ImageView
                     android:id="@+id/menu1"
                     android:scaleType="centerInside"
+
                     android:layout_width="match_parent"
                     tools:ignore="MissingConstraints,constraint"
                     android:layout_height="300dp"
@@ -111,10 +112,10 @@
                 android:id="@+id/deskripsi1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="16dp"
-                android:layout_marginLeft="16dp"
-                android:text="Hotdog yang menggugah selera, sosis yang garing, sayuran segar seperti kubis dan bawang, ditambah dengan saus rahasia yang memberikan kelezatan yang tak tertandingi."
-                android:textSize="17sp"
+                android:layout_margin="18dp"
+                android:text="@string/makan2"
+                android:textSize="16sp"
+                android:layout_marginTop="10dp"
                 android:fontFamily="@font/mediumpop"
                 android:textColor="@color/black"
                />

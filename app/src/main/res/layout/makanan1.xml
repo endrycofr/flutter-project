@@ -100,9 +100,9 @@
                 android:id="@+id/deskripsi1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="16dp"
-                android:text="Patty kepiting renyah, sayuran segar seperti selada dan tomat, serta saus rahasia yang memberikan cita rasa unik."
-                android:textSize="20sp"
+                android:layout_margin="18dp"
+                android:text="@string/makan1"
+                android:textSize="18sp"
                 android:fontFamily="@font/mediumpop"
                 android:textColor="@color/black"
                />

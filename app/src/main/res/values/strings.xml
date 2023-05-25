@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Food Order</string>
+    <string name="makan1">Patty kepiting renyah,sayuran segar seperti selada dan tomat,serta saus rahasia yang memberikan cita rasa unik.</string>
+    <string name="makan2">Hotdog yang menggugah selera,sosis yang garing,sayuran segar seperti kubis dan bawang,ditambah dengan saus rahasia yang memberikan kelezatan yang tak tertandingi.
+</string>
+
 </resources>
