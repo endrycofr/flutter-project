@@ -4,6 +4,7 @@ import android.media.Image;
 import android.os.Bundle;
 import android.content.Intent;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
@@ -16,13 +17,14 @@ public class Makanan2 extends AppCompatActivity {
     private int counter = 0;
     private  int beli;
     private ImageButton prevButton;
+    private ImageButton checkoutButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.makanan2);
 
-        nextButton = findViewById(R.id.arrow_right);
         prevButton = findViewById(R.id.arrow_left);
+        checkoutButton =findViewById(R.id.keranjang);
         prevButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -30,7 +32,7 @@ public class Makanan2 extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        nextButton.setOnClickListener(new View.OnClickListener() {
+        checkoutButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Makanan2.this, Checkout.class);
